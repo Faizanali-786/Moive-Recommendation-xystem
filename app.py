@@ -32,7 +32,7 @@ similarity = pickle.load(similarity2)
 #similarity2.close()
 
 
-movie_dict2 = gzip.open('movie_dict2.pkl','rb')
+movie_dict2 = gzip.open('movie_dict2.pklz','rb')
 movies = pickle.load(movie_dict2)
 #movie_dict2.close()
 
@@ -40,7 +40,7 @@ st.header('Movie Recommender System')
 #movies = pickle.load(open('movie_dict.pkl','rb'))
 #similarity = pickle.load(open('similarity.pkl','rb'))
 
-movie_list = new_df['title'].values
+movie_list = movies['title'].values
 selected_movie = st.selectbox(
     "Type or select a movie from the dropdown",
     movie_list
