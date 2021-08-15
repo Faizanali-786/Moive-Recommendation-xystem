@@ -27,15 +27,9 @@ def recommend(movie):
     return recommended_movie_names,recommended_movie_posters
 import gzip, pickle, pickletools
 
-filename = "similarity2.pkl"
-
-infile = open(filename,'rb')
-similarity = pickle.load(infile, encoding='latin1')
-
-filename = "movie_dict.pkl"
-
-infile = open(filename,'rb')
-movies = pickle.load(infile, encoding='latin1')
+similarity2 = gzip.open('similarity2.pkl','rb')
+similarity = pickle.load(similarity2)
+similarity2.close()
 
 st.header('Movie Recommender System')
 #movies = pickle.load(open('movie_dict.pkl','rb'))
