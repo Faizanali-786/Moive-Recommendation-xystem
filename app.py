@@ -45,7 +45,7 @@ movie_list = set(movie_data)
 st.write(movie_list)
 selected_movie = st.selectbox(
     "Type or select a movie from the dropdown",
-    (movie_list)
+    ("Batman Begins")
 )
 
 if st.button('Show Recommendation'):
