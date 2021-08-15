@@ -40,10 +40,10 @@ st.header('Movie Recommender System')
 #movies = pickle.load(open('movie_dict.pkl','rb'))
 #similarity = pickle.load(open('similarity.pkl','rb'))
 
-movie_list = movies['title'].values
+movie_list = movies['title']
 selected_movie = st.selectbox(
     "Type or select a movie from the dropdown",
-    ("hero","jiini","aladin")
+    (movie_list)
 )
 
 if st.button('Show Recommendation'):
