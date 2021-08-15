@@ -41,6 +41,7 @@ st.header('Movie Recommender System')
 #similarity = pickle.load(open('similarity.pkl','rb'))
 
 movie_list = movies['title'].values
+st.write(movie_list)
 selected_movie = st.selectbox(
     "Type or select a movie from the dropdown",
     (movie_list)
