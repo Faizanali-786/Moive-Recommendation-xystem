@@ -29,12 +29,12 @@ import gzip, pickle, pickletools
 
 similarity2 = gzip.open('similarity2.pkl','rb')
 similarity = pickle.load(similarity2)
-similarity2.close()
+#similarity2.close()
 
 
 movie_dict2 = gzip.open('movie_dict2.pkl','rb')
 movies = pickle.load(movie_dict2)
-movie_dict2.close()
+#movie_dict2.close()
 
 st.header('Movie Recommender System')
 #movies = pickle.load(open('movie_dict.pkl','rb'))
