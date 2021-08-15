@@ -40,9 +40,7 @@ st.header('Movie Recommender System')
 #movies = pickle.load(open('movie_dict.pkl','rb'))
 #similarity = pickle.load(open('similarity.pkl','rb'))
 
-movie_data = movies['title'].values
-movie_list = set(movie_data)
-st.write(movie_list)
+movie_list = movies['title'].values
 selected_movie = st.selectbox(
     "Type or select a movie from the dropdown",
     ("Batman Begins")
